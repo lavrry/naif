@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>الإعلانات القصيرة</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- شريط علوي -->
+  <nav class="navbar">
+   <div class="logo">
+  <img src="logo3.png" alt="شعار الموقع" class="logo-img">
+  <span>أعمال نايف السعيد</span>
+</div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+
+  <!-- القائمة الجانبية -->
+  <div id="sideMenu" class="side-menu">
+    <a1 href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a1>
+    <a href="index.html">الرئيسية</a>
+    <a href="moments.html">اللحظات</a>
+    <a href="food.html">تصوير الأكل</a>
+    <a href="products.html">تصوير المنتجات</a>
+    <a href="photos.html">الصور</a>
+    <a href="contact.html">تواصل معنا</a>
+  </div>
+
+  <!-- محتوى الصفحة -->
+  <header class="hero">
+    <h1>الإعلانات القصيرة</h1>
+    <p>مجموعة من أعمالي في تصوير الإعلانات القصيرة</p>
+  </header>
+
+  <main class="content-section">
+    <div class="gallery">
+      <video src="video/ad1.mp4" controls class="gallery-img"></video>
+      <video src="video/ad2.mp4" controls class="gallery-img"></video>
+      <video src="video/ad3.mp4" controls class="gallery-img"></video>
+      <video src="video/ad4.mp4" controls class="gallery-img"></video>
+      <video src="video/ad5.mp4" controls class="gallery-img"></video>
+      <video src="video/ad6.mp4" controls class="gallery-img"></video>
+      <video src="video/ad7.mp4" controls class="gallery-img"></video>
+      <video src="video/ad8.mp4" controls class="gallery-img"></video>
+      <video src="video/ad9.mp4" controls class="gallery-img"></video>
+
+
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("sideMenu").classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>

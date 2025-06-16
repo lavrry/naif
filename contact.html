@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>تواصل معنا</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- شريط علوي -->
+  <nav class="navbar">
+   <div class="logo">
+  <img src="logo3.png" alt="شعار الموقع" class="logo-img">
+  <span>أعمال نايف السعيد</span>
+</div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+
+  <!-- القائمة الجانبية -->
+  <div id="sideMenu" class="side-menu">
+    <a1 href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a1>
+    <a href="index.html">الرئيسية</a>
+    <a href="moments.html">اللحظات</a>
+    <a href="ads.html">الإعلانات</a>
+    <a href="food.html">تصوير الأكل</a>
+    <a href="products.html">تصوير المنتجات</a>
+    <a href="photos.html">الصور</a>
+  </div>
+
+  <!-- محتوى الصفحة -->
+  <header class="hero">
+    <h1>تواصل معنا</h1>
+    <p>يسعدني تواصلك واستفساراتك</p>
+  </header>
+
+ <section class="contact-section">
+  <div class="contact-box">
+    <h2>تواصل معنا</h2>
+
+    <form action="https://formspree.io/f/myzjjdno" method="POST" class="contact-form">
+      <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you.html">
+      <input type="text" name="الاسم" placeholder="الاسم" required>
+      <input type="text" name="رقم الهاتف" placeholder="رقم الهاتف" required>
+      <input type="email" name="البريد الإلكتروني" placeholder="البريد الإلكتروني" required>
+      <textarea name="الرسالة" rows="5" placeholder="اكتب رسالتك هنا" required></textarea>
+      
+      <button type="submit">إرسال</button>
+    </form>
+  </div>
+</section>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("sideMenu").classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>

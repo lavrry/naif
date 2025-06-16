@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>موقعي للتصوير</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- زر الهامبرغر -->
+  <nav class="navbar">
+   <div class="logo">
+  <img src="logo3.png" alt="شعار الموقع" class="logo-img">
+  <span>أعمال نايف السعيد</span>
+</div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+
+  <!-- القائمة الجانبية -->
+  <div id="sideMenu" class="side-menu">
+    <a1 href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a1>
+    <a href="moments.html">اللحظات</a>
+    <a href="ads.html">الإعلانات</a>
+    <a href="food.html">تصوير الأكل</a>
+    <a href="products.html">تصوير المنتجات</a>
+    <a href="photos.html">الصور</a>
+    <a href="contact.html">تواصل معنا</a>
+  </div>
+
+  <!-- محتوى الصفحة -->
+  <header class="hero">
+    <h1>مرحبًا بكم في عالمي</h1>
+    <p>أُجسّد لحظاتك، وأحكي قصتك بالصورة</p>
+
+  </header>
+
+  <!-- داخل index.html بعد <header class="hero"> -->
+
+<main class="content-section">
+  <section class="about-section">
+    <h2>من نحن</h2>
+    <p>
+      نحن فريق متخصص في التصوير والمونتاج نقدم خدمات احترافية تشمل تصوير اللحظات
+      المميزة، الإعلانات القصيرة، تصوير الأطعمة والمنتجات، مع لمسة فنية دقيقة
+      تبرز التفاصيل. هدفنا هو تقديم محتوى بصري يلفت الأنظار ويترك أثرًا.
+    </p>
+  </section>
+</main>
+
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("sideMenu").classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
