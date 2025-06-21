@@ -288,3 +288,20 @@ header.hero p {
 .logo span {
   margin-right: -10px;
 }
+
+
+@media (max-width: 768px) {
+  .logo {
+    width: 100px; /* أو أي حجم يناسبك */
+    height: auto;
+  }
+
+  .site-title {
+    font-size: 20px;
+  }
+
+  .cta-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
